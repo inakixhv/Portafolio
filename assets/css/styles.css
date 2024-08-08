@@ -119,7 +119,7 @@ section.title {
 /* Estilizando Sección About */
 section.about {
     display: flex;
-    padding: 10px 20px 20px 20px;
+    padding: 20px;
     align-items: center;
     /* margin-top: 50px; */
     /* font-size: small; */
@@ -134,7 +134,7 @@ section.about {
 }
 
 .about__title {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -148,13 +148,14 @@ section.skills{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /* gap: 10px; */
     /* align-items: center; */
     justify-content: center;
 }
 .skills__box{
     display: flex;
     background-color: rgba(196, 132, 255, 0.487);
-    margin: 10px; ;
+    margin: 10px; 
     /* padding: 10px; */
     width: 35%;
     height: 100px;
@@ -173,6 +174,7 @@ section.skills{
     /* justify-content: end; */
     /* align-items: end; */
     padding: 10px;
+    /* position: static; */
 }
 .skills__img img{
     width: auto;
@@ -182,9 +184,13 @@ section.skills{
     /* justify-self: baseline; */
     /* background-color: black; */
 }
+ion-icon{
+    position: static;
+}
 .skills__img ion-icon{
     /* width: auto; */
     /* height: 100px; */
+    /* position:static; */
     color: purple;
     font-size: 37px;
 }
@@ -335,34 +341,47 @@ section.experience{
     flex-direction: column;
     /* justify-content: space-between; */
     gap: 30px;
-    padding: 30px 30px;
-    background-color: #0dff007f;
+    padding: 30px;
+    /* background-color: #0dff007f; */
 }
 .experience__section__title{
     font-weight: bolder;
     margin-bottom: 0;
 }
 .experience__box{
-    background-color: #ff000086;
+    /* background-color: #ff000086; */
 
 }
-.btn-bd-primary {
-    --bs-btn-font-weight: 600;
-    --bs-btn-color: var(--bs-black);
-    --bs-btn-bg: var(--bd-violet-bg);
-    --bs-btn-border-color: var(--bd-violet-bg);
-    --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
-    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
-    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-    --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
-    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
-  }
+.experience__info{
+    margin-top: 20px;
+}
+.experience__title{
+    font-weight: bolder;
+    font-size: 21px;
+}
+.experience__text{
+    font-size: large;
+}
+.experience__description{
+    display: flex;
+    gap: 10px;
+}
+.experience__botao--repo{
+    background-color: rgba(251, 182, 251, 0.675);
+    color: rgb(171, 0, 171);
+    border-color: rgb(248, 151, 248) ;
+}
+.experience__botao--demo{
+    background-color: rgb(171, 0, 171) ;
+    border-color:rgb(122, 0, 122) ;
+}
 
-
-
-
+section.formcontato{
+    background-color: #bf6fd553;
+}
+.formcontato__img{
+    display: none;
+}
 
 
 

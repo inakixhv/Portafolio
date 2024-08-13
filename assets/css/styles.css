@@ -81,9 +81,13 @@ section.menu {
 
 .menu__header {
     /* display: flex; */
-    /* align-items: center; */
+    align-items: center;
     /* justify-content: center; */
     /* gap: 10px; */
+}
+
+.menu__header h3{
+    font-weight: bold;
 }
 
 .menu__header img {
@@ -122,7 +126,7 @@ section.title {
     height: 130px;
     /* mask-image: -webkit-radial-gradient(); */
     border-radius: 50%;
-    width: auto;
+    /* width: auto; */
 }
 
 .title__container {
@@ -357,7 +361,7 @@ section.academic {
 .academic__courses__box {
     background-color: #fefefe;
     width: 83.33%;
-    height: 30vh;
+    height: 40vh;
     border-radius: 10px;
     padding: 20px;
     /* margin: 0px 30px 30px 30px; */
@@ -378,6 +382,7 @@ section.academic {
     /* align-items: center; */
     display: flex;
     justify-content: center;
+    align-items: center;
     /* justify-self: center; */
     /* background-color: #464646; */
     height: 70%;
@@ -551,4 +556,113 @@ section.formcontato {
     color: white;
     --bs-btn-hover-bg:rgb(189, 96, 189);
     --bs-btn-hover-color: var(--bs-white);
+}
+
+
+
+@media (min-width:768px){
+    .menu__header{
+        margin-left: 20px;
+    }
+    .menu__header h3{
+        font-size: large;
+
+    }
+    .menu__list__item__contacto{
+        margin-right: 20px;
+    }
+    .menu__list__item__contacto a{
+        font-weight: bold;
+        font-size: medium;
+    }
+
+
+    .title__div{
+        /* margin-right: 20px; */
+        padding-right: 20px;
+    }
+    .title__network__item{
+        justify-content: center;
+    }
+    .title__network__item a{
+        font-size: medium;
+    }
+    .title__network__item img{
+        height: 15px;
+    }
+    
+    .skills__line{
+        margin-top: 30px;
+    }
+    .skills__box{
+        width: 30%;
+    }
+
+
+    section.hobbies {
+        margin-top: 50px;
+    }
+    .hobbies__line{
+        margin: 30px 0;
+        height: 250px;
+    }
+    .hobbies__box{
+        width: 30%;
+    }
+    #escucharMusica{
+        right: 5%;
+    }
+
+
+    .academic__courses__box{
+        height: 50vh;
+    }
+}
+
+@media (min-width:992px){
+    .menu__list{
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        gap: 10px;
+    }
+
+    section.title{
+        height: 40vh;
+        /* align-items: center; */
+    }
+    .title__div{
+        gap: 20%;
+        height: 200px;
+        padding-right: 100px;
+    }
+    .title__profile{
+        height: 100%;
+        width: 15%;
+    }
+    .title__bio{
+        /* font-size: 25px; */
+        font-size: 200%;
+    }
+
+
+    .skills__box{
+        width: 15%;
+    }
+
+    .hobbies__line{
+        /* margin: 30px 0; */
+        height: 150px;
+    }
+    .hobbies__box{
+        width: 15%;
+    }
+
+
+    .academic__courses__box{
+        height: 35vh;
+    }
+    .academic__courses__item__img{
+        padding-top: 5%;
+    }
 }

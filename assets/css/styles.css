@@ -621,9 +621,9 @@ section.formcontato {
 
 @media (min-width:992px){
     .menu__list{
-        justify-content: space-between;
-        margin: 0;
-        padding: 0;
+        /* justify-content: space-between; */
+        /* margin: 0; */
+        /* padding: 0; */
         gap: 10px;
     }
 
@@ -660,7 +660,7 @@ section.formcontato {
 
 
     .academic__courses__box{
-        height: 35vh;
+        height: 40vh;
     }
     .academic__courses__item__img{
         padding-top: 5%;
